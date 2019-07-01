@@ -1,0 +1,89 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .example-card{
+      margin-top: 4px;
+      margin-left:8.33%;
+      border-style: ridge;
+      border: rgb(110, 110, 110);
+  }
+  
+  .example-header-image { 
+    background-size: cover;
+  }
+  
+  .title{
+      font-weight: bold;
+  }
+  
+  .img-article{
+      height: 350px;
+  }
+  
+  .action-buttons{
+      text-align: center;
+  }
+  
+  .double-nav .breadcrumb-dn {
+    color: #fff;
+  }
+
+  .example-container {
+      width: 100%;
+      height: auto;
+      border: 1px solid rgba(111, 111, 111, 0.50);
+  }
+  
+  .example-sidenav-content {
+      display: flex;
+      height: 75%;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .example-sidenav {
+      padding: 20px;
+  }
+  
+  .source-name {
+      margin-left:5px; 
+  }
+  
+  .list-item:hover{
+      cursor: pointer;
+      background-color: #3f51b5;
+      color: white;
+  }
+  button{
+      margin:10px;
+  }
+  mat-sidenav {
+    background-color:darkgray;
+  }
+ 
+  select option[data-default] {
+    color: #888;
+  }
+  .input-group-prepend span{
+    width: 50px;
+    background-color: #FFC312;
+    color: black;
+    border:0 !important;
+    }
+    .input-group .form-group
+    {
+        flex: 1 1 auto;
+    }
+    .align{
+        padding-left:10%;
+        padding-right:10%;
+    }
+
+    .nav-link{
+        color:#fff
+    }
+    .nav{
+        background-color: #888
+    }
+    

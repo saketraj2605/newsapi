@@ -1,0 +1,164 @@
+/* .form-control, .form-control:focus, .input-group-addon {
+  border-color: #e1e1e1;
+  border-radius: 0;
+}
+.login-form {
+  width: 390px;
+  margin: 0 auto;
+  padding: 30px 0;
+  margin-top: 150px;
+}
+.login-form h2 {
+  color: #636363;
+  margin: 0 0 15px;
+  text-align: center;
+}
+.login-form .lead {
+  font-size: 14px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.login-form form {		
+  border-radius: 1px;
+  
+  background: #fff;
+  border: 1px solid #f3f3f3;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+.login-form label {
+  font-weight: normal;
+  font-size: 13px;
+}
+.login-form .form-control {
+  min-height: 38px;
+  box-shadow: none !important;
+  border-width: 0 0 1px 0;
+}	
+.login-form .input-group-addon {
+  max-width: 42px;
+  text-align: center;
+  background: none;
+  border-width: 0 0 1px 0;
+  padding-left: 5px;
+  padding-top: 8px;
+}
+.login-form .btn {        
+  font-size: 16px;
+  font-weight: bold;
+  background: #19aa8d;
+  border-radius: 3px;
+  border: none;
+  min-width: 140px;
+  outline: none !important;
+}
+.login-form .btn:hover, .login-form .btn:focus {
+  background: #179b81;
+}
+.login-form a {
+  color: #19aa8d;
+  text-decoration: none;
+}	
+.login-form a:hover {
+  text-decoration: underline;
+}
+.login-form .fa .fas{
+  font-size: 21px;
+} */
+
+
+
+
+
+
+
+body{
+  background-image: url('/assets/newspaper.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: 'Numans', sans-serif;
+  }
+  
+  .container{
+    padding-top:5%;
+    margin-bottom:5%;
+  height: auto;
+  align-content: center;
+  }
+  
+  .card{
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: rgba(0,0,0,0.5) !important;
+  }
+  
+  .social_icon span{
+  font-size: 60px;
+  margin-left: 10px;
+  color: #FFC312;
+  }
+  
+  .social_icon span:hover{
+  color: white;
+  cursor: pointer;
+  }
+  
+  .card-header h3{
+  color: white;
+  }
+  
+  .social_icon{
+  position: absolute;
+  right: 20px;
+  top: -45px;
+  }
+  
+  .input-group-prepend span{
+  width: 50px;
+  background-color: #FFC312;
+  color: black;
+  border:0 !important;
+  }
+  
+  input:focus{
+  outline: 0 0 0 0  !important;
+  box-shadow: 0 0 0 0 !important;
+  
+  }
+  
+  .remember{
+  color: white;
+  }
+  
+  .remember input
+  {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
+  }
+  
+  .login_btn{
+  color: black;
+  background-color: #FFC312;
+  width: 100px;
+  }
+  
+  .login_btn:hover{
+  color: black;
+  background-color: white;
+  }
+  
+  .links{
+  color: white;
+  }
+  
+  .links a{
+  margin-left: 4px;
+  }

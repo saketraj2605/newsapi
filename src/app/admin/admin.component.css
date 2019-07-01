@@ -1,0 +1,21 @@
+.nav-link{
+    color:#fff
+}
+.nav{
+    background-color: #888
+}
+.login_btn{
+    color: black;
+    background-color: #FFC312;
+    width: auto;
+    }
+    
+    .login_btn:hover{
+    color: black;
+    background-color: white;
+    }
+    .card{
+        margin:3%;
+    }
+
+    

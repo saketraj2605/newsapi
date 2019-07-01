@@ -1,0 +1,104 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
+
+
+<mat-toolbar color="primary">
+  <div class ="row">
+  <div class="input-group form-group  col-lg-1 col-sm-1 ">
+    
+  <div class="input-group-prepend" >
+    <span class="input-group-text" (click)="sidenav.open ()" ><i class="fas fa-bars"></i></span>
+  </div>
+  </div>
+
+  <span class="example-spacer"></span>
+
+ 
+
+    <div class="input-group form-group col-lg-4 col-sm-8">
+        <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-language"></i></span>
+        </div>
+        <select class="form-control" [(ngModel)]="language"  (change)="searchArticleByLanguage()">
+            <option value="" disabled selected>Select your preferred language</option>
+            <option value="en">English</option>
+            <option value="es">Spanish </option>
+            <option value="de">German</option>
+            <option value="ar">Arabic</option>
+            <option value="fr">French</option>
+            <option value="he">Afro-Asiatic</option>
+            <option value="it">Italian</option>
+            <option value="nl">Dutch</option>
+            <option value="no">Norwegian </option>
+            <option value="pt">Portuguese</option>
+            <option value="ru">Russian</option>
+            <option value="se">Sami</option>
+            <option value="ud">Urdu</option>
+            <option value="zh">Chinese </option>
+            </select>
+      
+  </div>
+       
+
+  <!-- <div class="col-lg-3"><input class="form-control mr-sm-2" type="search" [(ngModel)]="keyword" placeholder="Search Keyword" aria-label="Search"></div>
+  <div class="col-auto">
+     <button mat-button color="primary" (click)="searchArticleByKeyword()"  type="submit"><i class="fas fa-search h4 text-body">search</i></button>
+  </div> -->
+ 
+  <div class="input-group form-group col-lg-5 col-sm-12">
+      <div class="input-group-prepend">
+          <span class="input-group-text"for="search" (click)="searchArticleByKeyword()"><i class="material-icons">search</i></span>
+      </div>
+  <input id="search" type="search" class="form-control" [(ngModel)]="keyword" placeholder="Search Keyword" required>
+  
+  </div>
+  
+ 
+</div>
+
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container">
+
+  <mat-sidenav #sidenav class="example-sidenav">
+    <mat-list class="list-nav">
+        <mat-list-item class="list-item" *ngFor="let source of mSources" (click)="searchArticles(source.id);sidenav.close();">
+
+          <div mat-card-avatar [ngStyle]="{'background-image': 'url(../assets/images/'+ source.id +'.png)'}" class="example-header-image"></div>
+
+          <span class="source-name"> {{source.name}}</span>
+
+        </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+
+  <!-- <mat-option *ngFor="let language of languages" (click)="searchArticles(language.id);">
+    <span class="language-name">{{language.name}}</span>
+  </mat-option> -->
+  <div class="align row">
+
+  <mat-card class="example-card col-lg-5 col-sm-12"  *ngFor="let article of mArticles">
+
+    <mat-card-header>
+      <div mat-card-avatar [ngStyle]="{'background-image': 'url(../assets/images/'+ article.source.id +'.png)'}" class="example-header-image"></div>
+      <mat-card-title class="title">{{article.title}}</mat-card-title>
+      <mat-card-subtitle>{{article.source.name}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="img-article" src={{article.urlToImage}} alt="">
+    <mat-card-content>
+      <p>
+        {{article.description}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions class="action-buttons">
+      <button mat-button color="primary"><mat-icon>favorite</mat-icon>Add to Favourites</button>
+      <button mat-button color="primary"><mat-icon>favorite_border</mat-icon>Remove from Favourites</button>
+    </mat-card-actions>
+ 
+  </mat-card>
+</div>
+</mat-sidenav-container>
+
+
+
